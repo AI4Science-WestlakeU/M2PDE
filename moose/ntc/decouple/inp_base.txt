@@ -1,0 +1,10 @@
+AXIS X
+%(x_coor)s
+AXIS Y
+%(y_coor)s
+# Time points
+AXIS T
+%(t_coor)s
+# function values
+DATA
+%(data)s

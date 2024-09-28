@@ -1,0 +1,6 @@
+results/
+data/
+wandb/
+**/__pycache__/
+test/
+*npy

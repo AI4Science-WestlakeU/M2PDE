@@ -1,0 +1,4 @@
+AXIS X
+%(x_coor)s
+DATA
+%(data)s
