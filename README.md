@@ -49,7 +49,7 @@ pip install -r requirements.txt
 
 ## Dataset and checkpoint
 
-All the dataset can be downloaded in this [this link](URL). Checkpoints are in [this link](URl). Both dataset.zip and checkpoint_path.zip should be decompressed to the root directory of this project.
+All the dataset can be downloaded in this [this link](https://drive.google.com/file/d/1W30JZzzwsLFyIkWfHKRJeYA_e5JG91zD/view?usp=drive_link). Checkpoints are in [this link](https://drive.google.com/file/d/1tg8eA3v9cx9emutWuDMB_1yax_QmhgLJ/view). Both dataset.zip and checkpoint_path.zip should be decompressed to the root directory of this project.
 
 
 ## Training
