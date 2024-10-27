@@ -544,7 +544,9 @@ class FNO2D(nn.Module):
             time_dim = None
         # Build Neural Fourier Operators
         for _ in range(self.nr_fno_layers):
-            self.spconv_layers.append(SpectralConv2d(self.fno_width, self.fno_width, fno_modes[0], fno_modes[1]))
+            self.spconv_layers.append(
+                SpectralConv2d(self.fno_width, self.fno_width, fno_modes[0], fno_modes[1], time_emb_dim=time_dim)
+            )
             self.conv_layers.append(nn.Conv2d(self.fno_width, self.fno_width, kernel_size=1))
             self.norm_layers.append(nn.GroupNorm(num_groups=4, num_channels=self.fno_width))
             # self.conv_layers.append(nn.Conv2d(self.fno_width,self.fno_width,kernel_size=3,padding=1))
