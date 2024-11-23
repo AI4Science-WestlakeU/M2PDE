@@ -21,13 +21,16 @@ Framework of paper:
 1. Install dependencies.
 
 ```code
-conda create -n ENV_NAME python=3.x.x
+conda create -n ENV_NAME python=3.12.4
 ```
 
 Install dependencies:
 ```code
 pip install -r requirements.txt
 ```
+
+Fow the Wasserstein disstance, please see:
+https://www.kernel-operations.io/geomloss/
 
 #  file structure
 - project_module
@@ -49,7 +52,7 @@ pip install -r requirements.txt
 
 ## Dataset and checkpoint
 
-All the dataset can be downloaded in this [this link](https://drive.google.com/file/d/1W30JZzzwsLFyIkWfHKRJeYA_e5JG91zD/view?usp=drive_link). Checkpoints are in [this link](https://drive.google.com/file/d/1tg8eA3v9cx9emutWuDMB_1yax_QmhgLJ/view). Both dataset.zip and checkpoint_path.zip should be decompressed to the root directory of this project.
+All the dataset can be downloaded in this [this link](URL). Checkpoints are in [this link](URl). Both dataset.zip and checkpoint_path.zip should be decompressed to the root directory of this project.
 
 
 ## Training
@@ -70,8 +73,20 @@ python heatpipe.py --batchsize 256 --model_type transformer --paradigm surrogate
 ## inference
 
 The codes for inference are in "./src/inference/"
-
-
+- reaction_diffusion_2d.ipynb: diffusion model for exp1.
+- reaction_diffusion_baseline_2d.ipynb: surrogate model for exp1.
+- reaction_diffusion_ablation.ipynb: ablation of diffusion model for exp1.
+- reaction_diffusion_couple.ipynb: diffusion model trained by coupled data for exp1.
+- nuclear_thermal.ipynb: diffusion model for exp2.
+- nuclear_thermal_baseline.ipynb: surrogate model for exp2.
+- nuclear_thermal_ablation.ipynb: ablation of diffusion model for exp1.
+- nuclear_thermal_couple.ipynb: diffusion model trained by coupled data for exp1.
+- heatpipe.ipynb: diffusion model for exp3.
+- heatpipe_gnn.ipynb: GIN baseline for exp3.
+- heatpipe_transformer.ipynb: Graph transformer baseline for exp3.
+- heatpipe_baseline.ipynb: surrogate model for exp3.
+- heatpipe_ablation.ipynb: ablation of diffusion model for exp3.
+- ws.ipynb: comparision of coupled and decoupled data (medium sturcture and large structure).
 ## Related Projects
 
 * [NAME](URL) (): brief description of the project.
