@@ -405,7 +405,7 @@ class GaussianDiffusion(Module):
         return img
 
     @torch.no_grad()
-    def ddim_sample(self, shape, clip_denoised=True):
+    def ddim_sample(self, shape, cond, clip_denoised=True):
         batch, device, total_timesteps, sampling_timesteps, eta, objective = (
             shape[0],
             self.betas.device,
@@ -428,7 +428,9 @@ class GaussianDiffusion(Module):
         for time, time_next in tqdm(time_pairs, desc="sampling loop time step"):
             time_cond = torch.full((batch,), time, device=device, dtype=torch.long)
             self_cond = x_start if self.self_condition else None
-            pred_noise, x_start, *_ = self.model_predictions(img, time_cond, self_cond, clip_x_start=clip_denoised)
+            pred_noise, x_start, *_ = self.model_predictions(
+                img, time_cond, cond, self_cond, clip_x_start=clip_denoised
+            )
 
             if time_next < 0:
                 img = x_start

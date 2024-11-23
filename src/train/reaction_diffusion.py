@@ -77,7 +77,7 @@ def forward_function(paradigm):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train simple distribution model")
     parser.add_argument("--exp_id", default="reaction_diffusion", type=str, help="experiment folder id")
-    parser.add_argument("--train_which", default="u", type=str, help="train u or v")
+    parser.add_argument("--train_which", default="v", type=str, help="train u or v")
     parser.add_argument("--lr", default=1e-4, type=float, help="learning rate")
     parser.add_argument("--batchsize", default=256, type=int, help="size of dataset")
     parser.add_argument("--epoches", default=200000, type=int, help="training epoch")
@@ -86,7 +86,7 @@ if __name__ == "__main__":
     parser.add_argument("--overall_results_path", default="results", type=str, help="where to create result folder")
     parser.add_argument("--seed", default=42, type=int, help="random seed")
     parser.add_argument("--in_dim", default=2, type=int, help="channel")
-    parser.add_argument("--dim", default=32, type=int, help="encode dim")
+    parser.add_argument("--dim", default=24, type=int, help="encode dim")
     parser.add_argument("--nx", default=20, type=int, help="dim in space")
     parser.add_argument("--out_dim", default=1, type=int, help="cond channel")
     parser.add_argument("--gap", default=9000, type=int, help="dataset size for train")

@@ -8,6 +8,17 @@ from typing import Dict, List, Union, Optional, Tuple
 import math
 from einops import rearrange, reduce
 
+"""
+   @misc{li2020fourier,
+      title={Fourier Neural Operator for Parametric Partial Differential Equations},
+      author={Zongyi Li and Nikola Kovachki and Kamyar Azizzadenesheli and Burigede Liu and Kaushik Bhattacharya and Andrew Stuart and Anima Anandkumar},
+      year={2020},
+      eprint={2010.08895},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+   }
+"""
+
 
 class SinusoidalPosEmb(nn.Module):
     def __init__(self, dim, theta=10000):

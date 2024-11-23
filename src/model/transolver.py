@@ -5,6 +5,15 @@ from timm.models.layers import trunc_normal_
 from einops import rearrange, repeat
 import math
 
+"""
+    @inproceedings{wu2024Transolver,
+    title={Transolver: A Fast Transformer Solver for PDEs on General Geometries},
+    author={Haixu Wu and Huakun Luo and Haowen Wang and Jianmin Wang and Mingsheng Long},
+    booktitle={International Conference on Machine Learning},
+    year={2024}
+    }
+"""
+
 
 class SinusoidalPosEmb(nn.Module):
     def __init__(self, dim, theta=10000):
