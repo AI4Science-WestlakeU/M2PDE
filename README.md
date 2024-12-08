@@ -4,11 +4,10 @@ This is a project module for a new project, which inludes the file framework, DL
 
 # paper_name
 
-[Paper](URL) | [arXiv](URL) | [Poster](URL) | [Tweet](URL)
+[Paper](URL) | [arXiv]([URL](https://arxiv.org/abs/2412.04134)) | [Poster](URL) | [Tweet](URL)
 
 Official repo for the paper [Paper Name](URL).<br />
 [Author name]()
-ICLR 2025 **under review**.
 
 we propose a compositional generative model for multiphysics and multi-component simulation based on diffusion model (MultiSimDiff). MultiSimDiff utilizes models trained on decoupled data for predicting coupled solutions and model trained on small structures for predicting large structures.
 
@@ -52,7 +51,7 @@ https://www.kernel-operations.io/geomloss/
 
 ## Dataset and checkpoint
 
-All the dataset can be downloaded in this [this link](URL). Checkpoints are in [this link](URl). Both dataset.zip and checkpoint_path.zip should be decompressed to the root directory of this project.
+All the dataset can be downloaded in [this link]([URL](https://drive.google.com/file/d/1tg8eA3v9cx9emutWuDMB_1yax_QmhgLJ/view?usp=drive_link)). Checkpoints are in [this link]([URL](https://drive.google.com/file/d/1tg8eA3v9cx9emutWuDMB_1yax_QmhgLJ/view?usp=drive_link)). Both dataset.zip and checkpoint_path.zip should be decompressed to the root directory of this project.
 
 
 ## Training
