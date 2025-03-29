@@ -52,7 +52,7 @@ https://www.kernel-operations.io/geomloss/
 ## Dataset and checkpoint
 
 All the dataset can be downloaded [here](https://drive.google.com/file/d/1W30JZzzwsLFyIkWfHKRJeYA_e5JG91zD/view?usp=drive_link).
-Checkpoints are available [here](https://drive.google.com/file/d/1RSt-LLwqs2YjadeBa0TC8NdZ8wpZL5gV/view?usp=drive_link).
+Checkpoints are available [here](https://drive.google.com/file/d/17sipzFVxYZwFqQarhDBEg5KRAP8FTNMB/view?usp=drive_link).
 Both `dataset.zip` and `checkpoint_path.zip` should be decompressed to the root directory of this project.
 
 
