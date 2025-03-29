@@ -84,6 +84,7 @@ The codes for inference are in "./src/inference/"
 - nuclear_thermal_couple.ipynb: diffusion model trained by coupled data for exp1.
 - heatpipe.ipynb: diffusion model for exp3.
 - heatpipe_gnn.ipynb: GIN baseline for exp3.
+- heatpipe_meshgraph.ipynb: meshgraphnet baseline for exp3.
 - heatpipe_transformer.ipynb: Graph transformer baseline for exp3.
 - heatpipe_baseline.ipynb: surrogate model for exp3.
 - heatpipe_ablation.ipynb: ablation of diffusion model for exp3.
