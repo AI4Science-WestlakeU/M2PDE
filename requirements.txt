@@ -79,3 +79,4 @@ Werkzeug==3.0.4
 wheel==0.43.0
 yacs==0.1.8
 yarl==1.9.4
+torch-scatter==2.1.2
