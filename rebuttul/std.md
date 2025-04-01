@@ -1,4 +1,4 @@
-For Experiment 2 and 3, the standard deviation in testing set is around 1% of the mean.
+Table.R1 For Experiment 2 and 3, the standard deviation in testing set is around 1% of the mean.
 | Exp2                | Neutron (decoupled) | Neutron (coupled) | Solid (decoupled) | Solid (coupled) | Fluid (decoupled) | Fluid (coupled) |
 | ------------------- | ------------------- | ----------------- | ----------------- | --------------- | ----------------- | --------------- |
 | MultiSimDiff (ours) | 0.7412 ± 0.0406     | 1.3761  ± 0.02585 | 0.1399 ± 0.0057   | 2.7546 ± 0.0048 | 0.2282 ± 0.0429   | 3.8638 ± 0.0049 |
