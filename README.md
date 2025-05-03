@@ -2,9 +2,6 @@
 
 [Paper](URL) | [arXiv](https://arxiv.org/abs/2412.04134) | [Poster](URL) | [Tweet](URL)
 
-Official repo for the paper [Paper Name](URL).<br />
-[Author name]()
-
 we propose a compositional generative model for multiphysics and multi-component simulation based on diffusion model (M2PDE). M2PDE utilizes models trained on decoupled data for predicting coupled solutions and model trained on small structures for predicting large structures.
 
 Framework of paper:
@@ -28,7 +25,7 @@ Fow the Wasserstein disstance, please see:
 https://www.kernel-operations.io/geomloss/
 
 #  File structure
-- project_module
+- M2PDE
   - moose                   # Use to generate datasets for Experiment 2 and Experiment 3, how to use it can be found in: https://mooseframework.org.
   - data                    # data class and dataloader used in the project
   - dataset                 # datasets ready for training or analysis
