@@ -1,8 +1,4 @@
-# project_module
-This is a project module for a new project, which inludes the file framework, DL pipline, RM.md example and some useful utils.
-**To be updating now.**
-
-# paper_name
+# M2PDE: Compositional Generative Multiphysics and Multi-component PDE Simulation
 
 [Paper](URL) | [arXiv](https://arxiv.org/abs/2412.04134) | [Poster](URL) | [Tweet](URL)
 
@@ -31,7 +27,7 @@ pip install -r requirements.txt
 Fow the Wasserstein disstance, please see:
 https://www.kernel-operations.io/geomloss/
 
-#  file structure
+#  File structure
 - project_module
   - moose                   # Use to generate datasets for Experiment 2 and Experiment 3, how to use it can be found in: https://mooseframework.org.
   - data                    # data class and dataloader used in the project
@@ -61,17 +57,27 @@ Both `dataset.zip` and `checkpoint_path.zip` should be decompressed to the root 
 Below we provide example commands for training the diffusion model/forward model.
 More can be found in "./scripts"
 
-### training model
+### Training model
 
-
+**For exp 1:**
 ```code
-python reaction_diffusion.py --train_which u --dim 24 --batchsize 256 --paradigm diffusion --epoches 200000
+python reaction_diffusion.py --train_which u --dim 24 --batchsize 256 --paradigm diffusion --model_type Unet --epoches 200000
+```
+**Description:** This command trains a conditional diffusion model for the physical field 'u'. This can be modified to train for other physical fields (using ``--train_which``), train a surrogate model instead (by changing ``--paradigm``), or use other neural network architectures (using ``--model_type``).
+
+**For exp 2:**
+```code
 python nuclear_thermal_coupling.py --train_which neutron --dim 8 --batchsize 32 --paradigm diffusion --dataset iter1 --n_dataset 5000 --gradient_accumulate_every 2 --epoches 200000
+```
+**Description:** This command trains a conditional diffusion model specifically for the 'neutron' physical field in a nuclear thermal coupling simulation. You can adjust the target field (using ``--train_which``), potentially change the modeling paradigm (using ``--paradigm``).
+
+**For exp 3:**
+```code
 python heatpipe.py --batchsize 256 --model_type transformer --paradigm surrogate --n_layer 5 --hidden_dim 64 --epoches 100000
 ```
+**Description:** This command trains a surrogate model for a heat pipe simulation, utilizing a Transformer neural network architecture. You can switch the modeling approach (using ``--paradigm``, e.g., to `diffusion`) and choose a different neural network structure (using ``--model_type``).
 
-
-## inference
+## Inference
 
 The codes for inference are in "./src/inference/"
 - reaction_diffusion_2d.ipynb: diffusion model for exp1.
@@ -89,11 +95,11 @@ The codes for inference are in "./src/inference/"
 - heatpipe_baseline.ipynb: surrogate model for exp3.
 - heatpipe_ablation.ipynb: ablation of diffusion model for exp3.
 - ws.ipynb: comparision of coupled and decoupled data (medium sturcture and large structure).
-## Related Projects
+<!-- ## Related Projects
 
 * [NAME](URL) (): brief description of the project.
 
-Numerous practices and standards were adopted from [NAME](URL).
+Numerous practices and standards were adopted from [NAME](URL). -->
 ## Citation
 If you find our work and/or our code useful, please cite us via:
 
