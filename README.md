@@ -9,7 +9,7 @@ This is a project module for a new project, which inludes the file framework, DL
 Official repo for the paper [Paper Name](URL).<br />
 [Author name]()
 
-we propose a compositional generative model for multiphysics and multi-component simulation based on diffusion model (MultiSimDiff). MultiSimDiff utilizes models trained on decoupled data for predicting coupled solutions and model trained on small structures for predicting large structures.
+we propose a compositional generative model for multiphysics and multi-component simulation based on diffusion model (M2PDE). M2PDE utilizes models trained on decoupled data for predicting coupled solutions and model trained on small structures for predicting large structures.
 
 Framework of paper:
 <a href="url"><img src="./schematic.png" align="center" width="600" ></a>
