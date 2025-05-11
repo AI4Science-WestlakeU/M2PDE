@@ -2,9 +2,14 @@
 
 [Paper](https://openreview.net/forum?id=Pwr2LznsQc) | [arXiv](https://arxiv.org/abs/2412.04134)
 
-we propose a compositional generative model for multiphysics and multi-component simulation based on diffusion model (M2PDE). M2PDE utilizes models trained on decoupled data for predicting coupled solutions and model trained on small structures for predicting large structures.
+Official repo for the paper M2PDE: [Compositional Generative Multiphysics and Multi-component PDE Simulation](https://arxiv.org/abs/2412.04134).
+[Tao Zhang](https://taozhan18.github.io/), Zhenhai Liu, Feipeng Qi, Yongjun Jiao†, [Tailin Wu†](https://tailin.org/).
+ICML 2025.
+
+We propose a compositional generative model for multiphysics and multi-component simulation based on diffusion model (M2PDE). M2PDE utilizes models trained on decoupled data for predicting coupled solutions and model trained on small structures for predicting large structures.
 
 Framework of paper:
+
 <a href="url"><img src="./schematic.jpg" align="center" width="600" ></a>
 
 ## Installation
@@ -26,20 +31,20 @@ https://www.kernel-operations.io/geomloss/
 
 #  File structure
 - M2PDE
-  - moose                   # Use to generate datasets for Experiment 2 and Experiment 3, how to use it can be found in: https://mooseframework.org.
-  - data                    # data class and dataloader used in the project
-  - dataset                 # datasets ready for training or analysis
+  - moose                   ! Use to generate datasets for Experiment 2 and Experiment 3, how to use it can be found in: https://mooseframework.org.
+  - data                    ! data class and dataloader used in the project
+  - dataset                 ! datasets ready for training or analysis
   - src
-    - train                 # codes for training models
-    - inference             # codes for inference
-    - model                 # model definitions
-    - utils                 # Utility scripts and helper functions
-    - filepath.py             # Python script for file path handling
-  - results                 # results and logs from training and inference
-  - .gitignore              # Specifies intentionally untracked files to ignore by git
-  - README.md               # Markdown file with information about the project for users
-  - reproducibility_statement.md # Markdown file with statements on reproducibility practices
-  - requirements.txt        # Text file with a list of dependencies to install
+    - train                 ! codes for training models
+    - inference             ! codes for inference
+    - model                 ! model definitions
+    - utils                 ! Utility scripts and helper functions
+    - filepath.py           ! Python script for file path handling
+  - results                 ! results and logs from training and inference
+  - .gitignore              ! Specifies intentionally untracked files to ignore by git
+  - README.md               ! Markdown file with information about the project for users
+  - reproducibility_statement.md ! Markdown file with statements on reproducibility practices
+  - requirements.txt        ! Text file with a list of dependencies to install
 
 
 ## Dataset and checkpoint
