@@ -1,11 +1,11 @@
-# M2PDE: Compositional Generative Multiphysics and Multi-component PDE Simulation
+# M2PDE: Compositional Generative Multiphysics and Multi-component PDE Simulation (ICML 2025)
 
-[Paper](URL) | [arXiv](https://arxiv.org/abs/2412.04134) | [Poster](URL) | [Tweet](URL)
+[Paper](https://openreview.net/forum?id=Pwr2LznsQc) | [arXiv](https://arxiv.org/abs/2412.04134)
 
 we propose a compositional generative model for multiphysics and multi-component simulation based on diffusion model (M2PDE). M2PDE utilizes models trained on decoupled data for predicting coupled solutions and model trained on small structures for predicting large structures.
 
 Framework of paper:
-<a href="url"><img src="./schematic.png" align="center" width="600" ></a>
+<a href="url"><img src="./schematic.jpg" align="center" width="600" ></a>
 
 ## Installation
 
@@ -102,6 +102,11 @@ If you find our work and/or our code useful, please cite us via:
 
 ```bibtex
 @inproceedings{
-    ...
+  tao2025m2pde,
+  title={M2PDE: Compositional Generative Multiphysics and Multi-component PDE Simulation},
+  author={Tao Zhang, Zhenhai Liu, Feipeng Qi, Yongjun Jiao, Tailin Wu},
+  booktitle={Forty-Second International Conference on Machine Learning},
+  year={2025},
+  url={https://openreview.net/forum?id=Pwr2LznsQc}
 }
 ```
